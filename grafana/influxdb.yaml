@@ -16,3 +16,8 @@ datasources:
     jsonData:
       httpMode: GET
       timeInterval: "5s"
+
+  - name: prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090

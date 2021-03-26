@@ -11,6 +11,13 @@ services:
       - ./grafana/dashboards.yaml:/etc/grafana/provisioning/dashboards/dashboards.yaml
     environment:
       GF_SECURITY_ADMIN_PASSWORD: admin
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
   influxdb:
     #image: influxdb:1.8.0
     image: influxdb:1.8.0

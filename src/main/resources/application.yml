@@ -6,3 +6,13 @@ spring:
     password: ~
     retention-policy: autogen
 
+management:
+  metrics:
+    export:
+      influx:
+        uri: http://localhost:8086/db/
+        db: leocat-api-${spring.profiles.active}
+        enabled: true  # export to InfluxDB enable
+        step: 10s
+      prometheus:
+        enabled: true  # prometheus enable
