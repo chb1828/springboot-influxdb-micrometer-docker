@@ -5,10 +5,12 @@ import lombok.Data;
 
 @Data
 @Builder
-public class TblStatDaysDTO {
+public class AccessDTO {
 
     private String os;
 
     private String op;
+
+    private String time;
 
 }

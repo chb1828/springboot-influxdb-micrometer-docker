@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.TblStatDaysDTO;
+import com.example.demo.dto.AccessDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -18,9 +18,9 @@ public class AutoPushService {
     @Scheduled(cron = "*/5 * * * * *")
     public void task() {
         System.out.println("데이터가 자동적으로 추가 되었습니다.");
-        TblStatDaysDTO dto = TblStatDaysDTO.builder()
+        AccessDTO dto = AccessDTO.builder()
                 .os("android")
-                .op("45002")
+                .op("45006")
                 .build();
 
         influxService.write(dto);

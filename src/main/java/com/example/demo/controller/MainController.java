@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-import com.example.demo.dto.TblStatDaysDTO;
+import com.example.demo.dto.AccessDTO;
 import com.example.demo.service.InfluxService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,12 +18,12 @@ public class MainController {
 	@GetMapping("/")
 	public String index() {
 
-		TblStatDaysDTO dto = TblStatDaysDTO.builder()
+		AccessDTO dto = AccessDTO.builder()
 				.os("ios")
 				.op("45004")
 				.build();
 		influxService.write(dto);
-		influxService.print();
+
 		return "데이터가 추가되었습니다.";
 	}
 
