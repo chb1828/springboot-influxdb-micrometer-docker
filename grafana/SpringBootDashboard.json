@@ -30,7 +30,7 @@
   "editable": true,
   "gnetId": 4701,
   "graphTooltip": 1,
-  "iteration": 1616988379570,
+  "iteration": 1616988714863,
   "links": [],
   "panels": [
     {
@@ -2576,7 +2576,7 @@
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1616988379570,
+      "repeatIteration": 1616988714863,
       "repeatPanelId": 3,
       "scopedVars": {
         "jvm_memory_pool_heap": {
@@ -2728,7 +2728,7 @@
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1616988379570,
+      "repeatIteration": 1616988714863,
       "repeatPanelId": 3,
       "scopedVars": {
         "jvm_memory_pool_heap": {
@@ -3046,7 +3046,7 @@
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1616988379570,
+      "repeatIteration": 1616988714863,
       "repeatPanelId": 78,
       "scopedVars": {
         "jvm_memory_pool_nonheap": {
@@ -3198,7 +3198,7 @@
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
-      "repeatIteration": 1616988379570,
+      "repeatIteration": 1616988714863,
       "repeatPanelId": 78,
       "scopedVars": {
         "jvm_memory_pool_nonheap": {
@@ -4510,7 +4510,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -4542,5 +4542,5 @@
   "timezone": "browser",
   "title": "Secuwifi",
   "uid": "34RJyg_Mk",
-  "version": 1
+  "version": 2
 }
