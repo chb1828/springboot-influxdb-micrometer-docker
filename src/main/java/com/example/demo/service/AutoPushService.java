@@ -2,12 +2,14 @@ package com.example.demo.service;
 
 import com.example.demo.dto.AccessDTO;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AutoPushService {
 
     private final InfluxService influxService;
@@ -23,6 +25,7 @@ public class AutoPushService {
                 .op("45006")
                 .build();
 
+        log.info("자동으로 데이터가 추가되었습니다.");
         influxService.write(dto);
 
     }
