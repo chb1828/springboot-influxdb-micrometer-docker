@@ -7,6 +7,10 @@ spring:
     retention-policy: autogen
 
 management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, prometheus
   metrics:
     export:
       influx:
@@ -18,3 +22,5 @@ management:
         password: secret
       prometheus:
         enabled: true  # prometheus enable
+    tags:
+      application: secuwifi
